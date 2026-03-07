@@ -1,0 +1,17 @@
+{
+  "name": "hueypark-skills",
+  "owner": {
+    "name": "Jaewan Park"
+  },
+  "metadata": {
+    "description": "Jaewan Park's Claude Code skills",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "base",
+      "source": "./plugins/base",
+      "description": "Base skills plugin"
+    }
+  ]
+}
