@@ -1,5 +1,10 @@
 {
   "name": "base",
-  "description": "Base skills plugin",
-  "version": "1.0.0"
+  "description": "Base skills plugin with auto-commit and other utilities",
+  "author": {
+    "name": "Jaewan Park"
+  },
+  "repository": "https://github.com/hueypark/skills",
+  "license": "MIT",
+  "keywords": ["commit", "git", "automation"]
 }

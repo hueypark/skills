@@ -5,13 +5,13 @@
   },
   "metadata": {
     "description": "Jaewan Park's Claude Code skills",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
       "name": "base",
       "source": "./plugins/base",
-      "description": "Base skills plugin"
+      "version": "1.0.1"
     }
   ]
 }
