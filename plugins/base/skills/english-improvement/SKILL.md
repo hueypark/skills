@@ -9,37 +9,17 @@ Translate Korean commands from this session into natural English expressions and
 
 ## Procedure
 
-### 1. Find Current Session Log
+### 1. Analyze Current Conversation
 
-Session logs are stored at `~/.claude/projects/<project-slug>/<session-uuid>.jsonl`.
+Review all user messages from the current conversation context.
 
-Find the current session's log file:
+### 2. Analyze English Usage
 
-```
-Glob(pattern="*.jsonl", path="~/.claude/projects/-Users-ab180-go-src-github-com-hueypark-skills/")
-```
-
-Pick the **most recently modified** `.jsonl` file (this is the current session). Ignore files in `subagents/` subdirectories.
-
-### 2. Parse and Extract User Messages
-
-Read the JSONL file. Each line is a JSON object. Focus on:
-
-- `type: "user"` → User messages (`message.content` has the prompt text)
-
-Extract all user-written text: commands, requests, chat messages, and plan-mode feedback.
-
-### 3. Analyze English Usage
-
-From the extracted user messages:
+From the user messages:
 
 1. Collect all Korean commands/requests and provide natural English equivalents
 2. Review and correct awkward or incorrect English expressions
 3. Suggest useful expression patterns
-
-### 4. Large Logs
-
-If the log file is too large to read at once, use the `offset` and `limit` parameters to read in chunks. Focus on the most recent portion first.
 
 ## Output Format
 
