@@ -1,0 +1,10 @@
+{
+  "name": "language",
+  "description": "Language skills plugin with English improvement utilities",
+  "author": {
+    "name": "Jaewan Park"
+  },
+  "repository": "https://github.com/hueypark/skills",
+  "license": "MIT",
+  "keywords": ["english", "language", "translation", "improvement"]
+}

@@ -10,8 +10,9 @@ Jaewan Park's Claude Code skills marketplace.
 /plugin marketplace add hueypark/skills
 ```
 
-2. Install the base plugin:
+2. Install plugins:
 
 ```
 /plugin install base@hueypark-skills
+/plugin install language@hueypark-skills
 ```
